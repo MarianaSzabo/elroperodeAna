@@ -1,7 +1,12 @@
+@import "mqueries";
 * {
   margin: 0;
   padding: o;
 }
+
+/*variables de color*/
+$green: #427f12;
+$darkgreen: #13704e;
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
@@ -10,17 +15,18 @@ body {
 /* header  */
 header {
   box-shadow: 1px 10px 6px -3px rgba(156, 149, 149, 0.9);
+  img {
+    width: 310px;
+  }
 }
-header img {
-  width: 310px;
-}
+
 .navbar {
   background-color: #e3de76;
 }
 .navbar-light .navbar-nav .nav-link {
   font-size: 1.5rem;
   font-weight: 400;
-  color: #13704e;
+  color: $darkgreen;
   margin: 0px 10px;
 }
 .navbar-collapse {
@@ -30,7 +36,7 @@ header img {
   border: none;
 }
 .dropdown-item {
-  color: #13704e;
+  color: $darkgreen;
   font-weight: 600;
 }
 main {
@@ -43,26 +49,26 @@ main {
 .sectionIndex h1 {
   text-align: center;
   font-weight: bolder;
-  color: #427f12;
+  color: $green;
 }
 .article-sis {
   display: flex;
   background-color: #f8e96c;
   align-items: center;
   padding: 50px;
-}
-.article-sis img {
-  width: 400px;
+  img {
+    width: 400px;
+  }
+  p {
+    padding-left: 50px;
+    font-size: 20px;
+    text-align: justify;
+  }
 }
 
-.article-sis p {
-  padding-left: 50px;
-  font-size: 20px;
-  text-align: justify;
-}
 .article-slow-title {
   text-align: center;
-  color: #427f12;
+  color: $green;
 }
 .article-slow {
   display: flex;
@@ -70,21 +76,22 @@ main {
   background-color: #fbf7ee;
   padding: 50px;
   margin-bottom: 20px;
+  p {
+    padding: 30px;
+    font-size: 20px;
+    text-align: justify;
+  }
+  img {
+    font-size: 18px;
+  }
+  a {
+    text-decoration: none;
+    color: black;
+  }
 }
-.article-slow p {
-  padding: 30px;
-  font-size: 20px;
-  text-align: justify;
-}
-.article-slow img {
-  font-size: 18px;
-}
-.article-slow a {
-  text-decoration: none;
-  color: black;
-}
+
 .link {
-  background-color: #0c573e;
+  background-color: $darkgreen;
   padding: 5px;
   border-radius: 3px;
   width: 50px;
@@ -98,16 +105,17 @@ main {
   padding: 50px;
   margin-bottom: 20px;
   background-color: #88afa7;
+  p {
+    padding: 30px;
+    font-size: 20px;
+    text-align: justify;
+  }
+  a {
+    text-decoration: none;
+    color: black;
+  }
 }
-.article-circ p {
-  padding: 30px;
-  font-size: 20px;
-  text-align: justify;
-}
-.article-circ a {
-  text-decoration: none;
-  color: black;
-}
+
 .article-container {
   display: flex;
   flex-direction: column;
@@ -121,14 +129,15 @@ main {
 }
 .nosotras-text {
   padding: 20px;
+  p {
+    font-size: 20px;
+    text-align: justify;
+  }
 }
-.nosotras-text p {
-  font-size: 20px;
-  text-align: justify;
-}
+
 .tituloSecundario {
   font-size: 45px;
-  color: #427f12;
+  color: $green;
   text-align: center;
   font-weight: bolder;
   margin: 20px;
@@ -136,36 +145,39 @@ main {
 /* slow-fashion */
 .slow-title {
   text-align: center;
-  color: #427f12;
+  color: $green;
 }
 .slow1 {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 20px;
+  p {
+    padding: 20px;
+    text-align: justify;
+  }
 }
-.slow1 p {
-  padding: 20px;
-  text-align: justify;
-}
+
 .slow2 {
   padding: 40px;
+  p {
+    padding: 30px;
+    margin: 10px;
+    font-size: 1.3rem;
+    text-align: center;
+  }
 }
-.slow2 p {
-  padding: 30px;
-  margin: 10px;
-  font-size: 1.3rem;
-  text-align: center;
-}
+
 .slow-li {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 20px;
+  ul {
+    padding: 30px;
+  }
 }
-.slow-li ul {
-  padding: 30px;
-}
+
 /*cards*/
 .bg-sweater {
   background-image: url(../imagenes/banner-sw.jpg);
@@ -183,7 +195,7 @@ main {
   background-image: url(../imagenes/banner-jn.jpg);
 }
 .btn {
-  background-color: #427f12;
+  background-color: $green;
   color: white;
   width: 80%;
 }
@@ -208,7 +220,7 @@ main {
 }
 /*contacto*/
 .tituloContacto {
-  color: #427f12;
+  color: $green;
   font-size: 30px;
   font-weight: bolder;
   padding: 20px;
@@ -233,8 +245,8 @@ main {
   width: 100%;
 }
 .form-check-input:checked {
-  background-color: #427f12;
-  border-color: #427f12;
+  background-color: $green;
+  border-color: $green;
 }
 
 /* footer */
@@ -246,69 +258,9 @@ main {
 }
 footer i {
   font-size: 30px;
-  color: #0c573e;
+  color: $darkgreen;
   margin: 20px;
 }
 footer i:hover {
-  color: #427f12;
-}
-/*media queries*/
-
-@media only screen and (max-width: 768px) {
-  .slow1 {
-    flex-direction: column;
-    align-items: center;
-  }
-  .slow1 img {
-    width: 700px;
-  }
-  .slow-li {
-    flex-direction: column-reverse;
-  }
-  .slow-fin {
-    display: flex;
-    justify-content: center;
-  }
-}
-
-@media only screen and (max-width: 576px) {
-  /*index*/
-  .article-sis {
-    flex-direction: column;
-    padding: 15px;
-  }
-  .article-sis p {
-    padding: 20px;
-  }
-  .article-slow {
-    flex-direction: column-reverse;
-  }
-  .article-slow p {
-    padding: 20px;
-  }
-  .image-article img {
-    width: 500px;
-  }
-  /*nosotras*/
-  .nosotras {
-    flex-direction: column;
-  }
-  .nosotras img {
-    width: 500px;
-  }
-  /*slow fashion*/
-  .slow1 {
-    flex-direction: column;
-    align-items: center;
-  }
-  .slow1 img {
-    width: 500px;
-  }
-  .slow-li {
-    flex-direction: column-reverse;
-  }
-  .slow-fin {
-    display: flex;
-    justify-content: center;
-  }
+  color: $green;
 }
