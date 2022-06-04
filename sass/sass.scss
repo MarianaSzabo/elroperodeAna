@@ -71,10 +71,8 @@ main {
   color: $green;
 }
 .article-slow {
-  display: flex;
-  align-items: center;
+  @extend .article-sis;
   background-color: #fbf7ee;
-  padding: 50px;
   margin-bottom: 20px;
   p {
     padding: 30px;
@@ -143,9 +141,13 @@ main {
   margin: 20px;
 }
 /* slow-fashion */
+@mixin title($align, $color) {
+  text-align: $align;
+  color: $color;
+}
+
 .slow-title {
-  text-align: center;
-  color: $green;
+  @include title(center, $green);
 }
 .slow1 {
   display: flex;
@@ -199,15 +201,27 @@ main {
   color: white;
   width: 80%;
 }
+/*map*/
+$estilosBanner: (
+  background-r: no-repeat,
+  background-p: center center,
+  background-s: cover,
+  width: 100%,
+  height: 50vh,
+  margin-b: 20px,
+  position: flex,
+  align-i: flex-end,
+);
+
 .banner {
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  width: 100%;
-  height: 50vh;
-  margin-bottom: 20px;
-  display: flex;
-  align-items: flex-end;
+  background-repeat: map-get($estilosBanner, background-r);
+  background-position: map-get($estilosBanner, background-p);
+  background-size: map-get($estilosBanner, background-s);
+  width: map-get($estilosBanner, width);
+  height: map-get($estilosBanner, height);
+  margin-bottom: map-get($estilosBanner, margin-b);
+  display: map-get($estilosBanner, position);
+  align-items: map-get($estilosBanner, align-i);
 }
 
 .banner h1 {
