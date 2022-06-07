@@ -1,0 +1,84 @@
+/*variables de color*/
+$green: #427f12;
+$darkgreen: #13704e;
+
+main {
+  margin-top: 130px;
+  margin-bottom: 30px;
+}
+.imagenBanner {
+  width: 100%;
+}
+.sectionIndex h1 {
+  text-align: center;
+  font-weight: bolder;
+  color: $green;
+}
+.article-sis {
+  display: flex;
+  background-color: #f8e96c;
+  align-items: center;
+  padding: 50px;
+  img {
+    width: 400px;
+  }
+  p {
+    padding-left: 50px;
+    font-size: 20px;
+    text-align: justify;
+  }
+}
+
+.article-slow-title {
+  text-align: center;
+  color: $green;
+}
+.article-slow {
+  @extend .article-sis;
+  background-color: #fbf7ee;
+  margin-bottom: 20px;
+  p {
+    padding: 30px;
+    font-size: 20px;
+    text-align: justify;
+  }
+  img {
+    font-size: 18px;
+  }
+  a {
+    text-decoration: none;
+    color: black;
+  }
+}
+
+.link {
+  background-color: $darkgreen;
+  padding: 5px;
+  border-radius: 3px;
+  width: 50px;
+  text-align: center;
+  margin: 5px;
+}
+.article-circ {
+  display: flex;
+  align-items: center;
+  background-color: #88afa7;
+  padding: 50px;
+  margin-bottom: 20px;
+  background-color: #88afa7;
+  p {
+    padding: 30px;
+    font-size: 20px;
+    text-align: justify;
+  }
+  a {
+    text-decoration: none;
+    color: black;
+  }
+}
+
+.article-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

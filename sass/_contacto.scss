@@ -1,0 +1,29 @@
+.tituloContacto {
+  color: $green;
+  font-size: 30px;
+  font-weight: bolder;
+  padding: 20px;
+  text-align: start;
+}
+.contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 130px 20px;
+}
+.formulario {
+  font-size: medium;
+  padding: 20px;
+  margin: 10px;
+  border: 1px solid #bed5cd;
+  border-radius: 5px;
+  background: #ddde8b;
+  width: 60%;
+}
+.form-control {
+  width: 100%;
+}
+.form-check-input:checked {
+  background-color: $green;
+  border-color: $green;
+}

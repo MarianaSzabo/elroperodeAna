@@ -1,0 +1,20 @@
+.nosotras {
+  display: flex;
+  align-items: center;
+  padding: 40px;
+}
+.nosotras-text {
+  padding: 20px;
+  p {
+    font-size: 20px;
+    text-align: justify;
+  }
+}
+
+.tituloSecundario {
+  font-size: 45px;
+  color: $green;
+  text-align: center;
+  font-weight: bolder;
+  margin: 20px;
+}

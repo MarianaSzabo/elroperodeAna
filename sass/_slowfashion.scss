@@ -1,0 +1,38 @@
+@mixin title($align, $color) {
+  text-align: $align;
+  color: $color;
+}
+
+.slow-title {
+  @include title(center, $green);
+}
+.slow1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  p {
+    padding: 20px;
+    text-align: justify;
+  }
+}
+
+.slow2 {
+  padding: 40px;
+  p {
+    padding: 30px;
+    margin: 10px;
+    font-size: 1.3rem;
+    text-align: center;
+  }
+}
+
+.slow-li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  ul {
+    padding: 30px;
+  }
+}

@@ -1,79 +1,4 @@
-/*media queries*/
-@media only screen and (max-width: 768px) {
-  .slow1 {
-    flex-direction: column;
-    align-items: center; }
-  .slow1 img {
-    width: 700px; }
-  .slow-li {
-    flex-direction: column-reverse; }
-  .slow-fin {
-    display: flex;
-    justify-content: center; } }
-
-@media only screen and (max-width: 576px) {
-  /*index*/
-  .article-sis, .article-slow {
-    flex-direction: column;
-    padding: 15px; }
-  .article-sis p, .article-slow p {
-    padding: 20px; }
-  .article-slow {
-    flex-direction: column-reverse; }
-  .article-slow p {
-    padding: 20px; }
-  .image-article img {
-    width: 500px; }
-  /*nosotras*/
-  .nosotras {
-    flex-direction: column; }
-  .nosotras img {
-    width: 500px; }
-  /*slow fashion*/
-  .slow1 {
-    flex-direction: column;
-    align-items: center; }
-  .slow1 img {
-    width: 500px; }
-  .slow-li {
-    flex-direction: column-reverse; }
-  .slow-fin {
-    display: flex;
-    justify-content: center; } }
-
-* {
-  margin: 0;
-  padding: o; }
-
 /*variables de color*/
-body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif; }
-
-/* header  */
-header {
-  box-shadow: 1px 10px 6px -3px rgba(156, 149, 149, 0.9); }
-  header img {
-    width: 310px; }
-
-.navbar {
-  background-color: #e3de76; }
-
-.navbar-light .navbar-nav .nav-link {
-  font-size: 1.5rem;
-  font-weight: 400;
-  color: #13704e;
-  margin: 0px 10px; }
-
-.navbar-collapse {
-  flex-grow: initial !important; }
-
-.dropdown-menu {
-  border: none; }
-
-.dropdown-item {
-  color: #13704e;
-  font-weight: 600; }
-
 main {
   margin-top: 130px;
   margin-bottom: 30px; }
@@ -143,7 +68,6 @@ main {
   flex-direction: column;
   align-items: center; }
 
-/*nosotras*/
 .nosotras {
   display: flex;
   align-items: center;
@@ -162,7 +86,6 @@ main {
   font-weight: bolder;
   margin: 20px; }
 
-/* slow-fashion */
 .slow-title {
   text-align: center;
   color: #427f12; }
@@ -192,7 +115,6 @@ main {
   .slow-li ul {
     padding: 30px; }
 
-/*cards*/
 .bg-sweater {
   background-image: url(../imagenes/banner-sw.jpg); }
 
@@ -232,7 +154,6 @@ main {
   opacity: 0.7;
   font-size: 25px; }
 
-/*contacto*/
 .tituloContacto {
   color: #427f12;
   font-size: 30px;
@@ -261,6 +182,82 @@ main {
 .form-check-input:checked {
   background-color: #427f12;
   border-color: #427f12; }
+
+/*media queries*/
+@media only screen and (max-width: 768px) {
+  .slow1 {
+    flex-direction: column;
+    align-items: center; }
+  .slow1 img {
+    width: 700px; }
+  .slow-li {
+    flex-direction: column-reverse; }
+  .slow-fin {
+    display: flex;
+    justify-content: center; } }
+
+@media only screen and (max-width: 576px) {
+  /*index*/
+  .article-sis, .article-slow {
+    flex-direction: column;
+    padding: 15px; }
+  .article-sis p, .article-slow p {
+    padding: 20px; }
+  .article-slow {
+    flex-direction: column-reverse; }
+  .article-slow p {
+    padding: 20px; }
+  .image-article img {
+    width: 500px; }
+  /*nosotras*/
+  .nosotras {
+    flex-direction: column; }
+  .nosotras img {
+    width: 500px; }
+  /*slow fashion*/
+  .slow1 {
+    flex-direction: column;
+    align-items: center; }
+  .slow1 img {
+    width: 500px; }
+  .slow-li {
+    flex-direction: column-reverse; }
+  .slow-fin {
+    display: flex;
+    justify-content: center; } }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+/*variables de color*/
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif; }
+
+/* header  */
+header {
+  box-shadow: 1px 10px 6px -3px rgba(156, 149, 149, 0.9); }
+  header img {
+    width: 310px; }
+
+.navbar {
+  background-color: #e3de76; }
+
+.navbar-light .navbar-nav .nav-link {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #13704e;
+  margin: 0px 10px; }
+
+.navbar-collapse {
+  flex-grow: initial !important; }
+
+.dropdown-menu {
+  border: none; }
+
+.dropdown-item {
+  color: #13704e;
+  font-weight: 600; }
 
 /* footer */
 .footer {
