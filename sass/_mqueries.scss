@@ -15,6 +15,9 @@
     display: flex;
     justify-content: center;
   }
+  .article-circ {
+    flex-direction: column-reverse;
+  }
 }
 
 @media only screen and (max-width: 576px) {
@@ -31,6 +34,9 @@
   }
   .article-slow p {
     padding: 20px;
+  }
+  .article-circ {
+    flex-direction: column reverse;
   }
   .image-article img {
     width: 500px;

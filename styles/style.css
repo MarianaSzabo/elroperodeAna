@@ -194,7 +194,9 @@ main {
     flex-direction: column-reverse; }
   .slow-fin {
     display: flex;
-    justify-content: center; } }
+    justify-content: center; }
+  .article-circ {
+    flex-direction: column-reverse; } }
 
 @media only screen and (max-width: 576px) {
   /*index*/
@@ -207,6 +209,8 @@ main {
     flex-direction: column-reverse; }
   .article-slow p {
     padding: 20px; }
+  .article-circ {
+    flex-direction: column reverse; }
   .image-article img {
     width: 500px; }
   /*nosotras*/
